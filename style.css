@@ -107,7 +107,7 @@
         max-width: 900px;
 }
 
-@media only screen and (max-width: 950px) {
+@media (max-width: 950px) {
         /* Responsive with tablets: */
         .project-grid{
                 grid-template-rows: 1fr 1fr 1fr;
@@ -122,7 +122,7 @@
         }
       }
 
-      @media only screen and (max-width: 620px) {
+      @media (max-width: 620px) {
         /* Responsive with mobile-phones: */
         .project-grid{
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -142,7 +142,7 @@
       }
       
       
-      @media only screen and (max-width: 370px) {
+      @media (max-width: 370px) {
         /* Responsive with mobile-phones: */
         .hire-me-section{
                 margin: 0;
