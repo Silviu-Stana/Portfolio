@@ -1,0 +1,203 @@
+.hero-section {
+        display: block;
+        position: inherit;
+        padding: 10px;
+        
+        background: linear-gradient(270deg, #4e47d0, #9193ff, #6ca3ff, #00d4ff);
+        background-size: 800% 800%;
+    
+        -webkit-animation: GradientAnimation 12s ease infinite;
+        -moz-animation: GradientAnimation 12s ease infinite;
+        animation: GradientAnimation 12s ease infinite;
+    }
+    
+    @-webkit-keyframes GradientAnimation {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes GradientAnimation {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes GradientAnimation {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+
+.hire-me-section{
+        margin: 0;
+        margin-top: 200px;
+        background-color: #6865e3;
+}
+
+.footer-section{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 0px;
+        background-color: #6865e3;
+}
+
+.resume-section{
+        display: block;
+        position: inherit;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+}
+
+.project-section{
+        display: block;
+        position: inherit;
+        padding: 10px;
+}
+
+.size-20{
+        font-size: 20px;
+}
+
+.size-30{
+        font-size: 30px;
+}
+
+.size-40{
+        font-size: 40px;
+}
+
+.size-50{
+        font-size: 50px;
+}
+
+.white-text{
+        color: aliceblue;
+}
+
+.purple-text{
+        color: #6e6be6;
+}
+
+.rounded-profile-icon{
+        border-radius: 50%;
+}
+
+.rounded-image{
+        border-radius: 25%;
+}
+
+.center-text{
+        text-align: center;
+}
+
+.center-container{
+        display: flex;
+        justify-content: center;
+}
+
+.project-grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        height: 600px;
+        max-width: 900px;
+}
+
+@media only screen and (max-width: 950px) {
+        /* Responsive with tablets: */
+        .project-grid{
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                max-width: 500px;
+        }
+      }
+
+      @media only screen and (max-width: 620px) {
+        /* Responsive with mobile-phones: */
+        .project-grid{
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+                max-width: 300px;
+        }
+      }
+
+.footer-grid{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        height: 100px;
+        max-width: 600px;
+}
+
+.margin-0{
+        margin: 0px;
+}
+
+.margin-1{
+        margin-top: 2px;
+        margin-bottom: 5px;
+}
+
+.margin-2{
+        margin-top: 10px;
+        margin-bottom: 5px;
+}
+
+.margin-50{
+        margin-top: 50px;
+        margin-bottom: 100px;
+}
+
+.project{
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: center;
+        align-items: left;
+        
+    /*  background-color:#4e47d0; */    
+}
+
+.align-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+body{
+        margin: 0px;
+}
+
+.button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 130px;
+        height: 60px;
+        border-radius: 35%;
+        border-color: black;
+        border: 3px solid black;
+        background-color: white;
+        font-size: 25px;
+        font-family: sans-serif;
+}
+
+.scallop-up{
+  height:30px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 50, from(#6865e3), color-stop(0.49, #6865e3), color-stop(0.51, #fff), to(white));
+-webkit-background-size: 49px 100%;
+}
+
+.button:hover {
+        text-decoration: underline;
+        font-family: sans-serif;
+        font-size: 26px;
+      }
