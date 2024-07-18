@@ -114,6 +114,12 @@
                 grid-template-columns: 1fr 1fr;
                 max-width: 500px;
         }
+        
+        .hire-me-section{
+                margin: 0;
+                margin-top: 400px;
+                background-color: #6865e3;
+        }
       }
 
       @media only screen and (max-width: 620px) {
@@ -122,6 +128,30 @@
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
                 grid-template-columns: 1fr;
                 max-width: 300px;
+        }
+        
+        .hire-me-section{
+                margin: 0;
+                margin-top: 1300px;
+                background-color: #6865e3;
+        }
+        
+        .footer-mobile-text{
+                font-size: 25;
+        }
+      }
+      
+      
+      @media only screen and (max-width: 370px) {
+        /* Responsive with mobile-phones: */
+        .hire-me-section{
+                margin: 0;
+                margin-top: 1300px;
+                background-color: #6865e3;
+        }
+        
+        .footer-mobile-text{
+                font-size: 16;
         }
       }
 
