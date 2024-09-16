@@ -73,6 +73,10 @@
         font-size: 50px;
 }
 
+.dateText {
+        font-size: 14px;
+}
+
 .white-text{
         color: aliceblue;
 }
@@ -85,8 +89,9 @@
         border-radius: 50%;
 }
 
-.rounded-image{
-        border-radius: 25%;
+.rounded-image {
+    border-radius: 25%;
+    transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1), width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth, fluid transition */
 }
 
 .center-text{
@@ -183,6 +188,7 @@
         margin-bottom: 100px;
 }
 
+
 .project{
         display: flex;
         flex-direction: column;
@@ -190,6 +196,16 @@
         justify-content: center;
         align-items: left;
     /*  background-color:#4e47d0; */    
+}
+
+.project a:focus .rounded-image, /* When the link is focused */
+.project a:hover .rounded-image{ /* When hovering over the link */
+    transform: scale(1.05); /* Increase image size */
+}
+
+.socialLink a:focus .rounded-image, /* When the link is focused */
+.socialLink a:hover .rounded-image{ /* When hovering over the link */
+    transform: scale(1.20); /* Increase image size */
 }
 
 .align-center{
@@ -216,7 +232,9 @@ body{
         background-color: white;
         font-size: 25px;
         font-family: sans-serif;
+        transition: transform 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 
 .scallop-up{
   height:30px;
@@ -229,4 +247,9 @@ body{
         text-decoration: underline;
         font-family: sans-serif;
         font-size: 26px;
+        transform: scale(1.05);
       }
+
+h4{
+        margin-bottom: 3px;
+}
